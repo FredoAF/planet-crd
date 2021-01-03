@@ -1,0 +1,74 @@
+apiVersion: "planets.universe/v1alpha1"
+kind: "Planet"
+metadata:
+  name: "earth"
+spec:
+  density:
+    value: 5.551
+    unit: "g/cm^3"
+  axialTilt: 23.439
+  surface:
+    temperature:
+      mean: 14.9
+      unit: "celcius"
+    gravity: 9.807
+  radius:
+    value: 6371
+    unit: "kilometers"
+  escapeVelocity:
+    value: 11.186
+    unit: "kilometers/second"
+  orbit:
+    around: "sun"
+    eccentricity: "0.0167086"
+    velocity:
+      value: 29.78
+      unit: "kilometers/second"
+  apsis:
+    relativeTo: sun
+    perihelion:
+      value: 147098291
+      unit: "kilometers"
+    aphelion:
+      value: 152098233
+      unit: "kilometers"
+  rotation:
+    value: 23.9345
+    unit: "hours"
+  revolution:
+    value: 365.26
+    unit: "days"
+  moons:
+  - name: "The Moon"
+    tidalLocking: "1:1"
+    tidalForce:
+      value: 6.57745E+18
+      unit: newtons
+    distance:
+      value: 384400
+      unit: "kilometers"
+  atmosphere:
+    pressure:
+      mean: 1013.25
+      unit: "mbar"
+    composition:
+    - element: "nitrogen"
+      percentage: 78.08
+    - element: "oxygen"
+      percentage: 20.95
+    - element: "water vapor"
+      percentage: 1
+    - element: "argon"
+      percentage: 0.9340
+    - element: "carbon dioxide"
+      percentage: 0.0408
+    - element: "neon"
+      percentage: 0.00182
+    - element: "helium"
+      percentage: 0.00052
+    - element: "methane"
+      percentage: 0.00017
+    - element: "krypton"
+      percentage: 0.00011
+    - element: "hydrogen"
+      percentage: 0.00006
